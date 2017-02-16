@@ -5,19 +5,18 @@
     <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
-    <h1>Update CSS variables with JS</h1>
+    <h1>Update CSS variables with <span class="h1">JS</span></h1>
     <div class="controls">
       <label for="spacing">Spacing:</label>
-      <input name="spacing" type="range" min="10" max="200" value="10"/>
+      <input name="spacing" type="range" min="10" max="200" value="10" data-sizing="px" />
 
       <label for="blur">Blur:</label>
-      <input name="blur" type="range" min="0" max="25" value="0" />
+      <input name="blur" type="range" min="0" max="25" value="0" data-sizing="px" />
 
       <label for="base">Base Color:</label>
-      <input type="color" name="base" value="#ff0000">
+      <input type="color" name="base" value="#ff0000" id="colorSelector">
     </div>
-    <div class="image">
-      <img src="valente.jpg" alt="comic strip by vitor caffagi">
-    </div>
+    <img src="valente.jpg" alt="comic strip by vitor caffagi">
+    <script src="jssheet.js"></script>
   </body>
 </html>

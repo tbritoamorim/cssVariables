@@ -1,5 +1,7 @@
 :root {
-  --border-color: #ff0000;
+  --base: #ff0000;
+  --spacing: 10px;
+  --blur: 0px;
 }
 
 body {
@@ -7,22 +9,33 @@ body {
   align-items: center;
   align-content: center;
   flex-direction: column;
+  background-color: black;
+  color: white;
+  font-family: 'helvetica', serif;
 }
 
 .controls {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  display: block;
+  font-size: 20px;
 }
 
-.image {
-  background-color: var(--border-color);
-  max-width: 80%;
+#colorSelector {
+  display: block;
+  margin: 0 auto;
+}
+
+.h1 {
+  color: var(--base);
 }
 
 img {
   display: block;
-  max-width: inherit;
-  max-height: inherit;
-  margin: 30px auto;
+  max-width: 60%;
+  max-height: 60%;
+  background-color: var(--base);
+  padding: var(--spacing);
+  filter: blur(var(--blur));
 }
 
 /* css for the range. DON'T CHANGE IT. */
